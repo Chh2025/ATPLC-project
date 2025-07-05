@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitZone Gym</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .navbar {
+      background-color: #1a1a1a;
+      padding: 1rem 2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: white;
+    }
+
+    .logo {
+      font-size: 1.8rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+
+    .nav-links li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 600;
+      transition: color 0.3s;
+    }
+
+    .nav-links li a:hover {
+      color: #f44336;
+    }
+
+    .hero {
+      background: url('gym-hero.jpg') no-repeat center center/cover;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      text-align: center;
+      padding: 2rem;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      text-shadow: 2px 2px 4px #000;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .btn {
+      background-color: #f44336;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 600;
+      transition: background 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #c62828;
+    }
+
+    .about {
+	   background-color:#eb344c;
+      padding: 4rem 2rem;
+      background-color: #f9f9f9;
+      text-align: center;
+    }
+
+    .about h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+    }
+
+    .about p {
+      max-width: 600px;
+      margin: 0 auto 2rem;
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    .features div {
+      background-color: #fff;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      min-width: 200px;
+    }
+
+    footer {
+      background-color: #1a1a1a;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        flex-direction: column;
+        gap: 0.5rem;
+      }
+
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .features {
+	     color:red;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+	.features div {
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  min-width: 200px;
+  text-align: center;
+}
+
+.features div img {
+  width: 90px;
+  height: 80px;
+  margin-bottom: 1rem;
+  object-fit: contain;
+}
+.features div p{color:red;}
+.about p,h{color:red;}
+  </style>
+</head>
+
+<body>
+  <!-- Navigation -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">🏋‍♂️ FitZone</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="register.php">Join Now</a></li>
+        <li><a href="login.php">Login</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Welcome to FitZone Gym</h1>
+    <p>Your fitness journey starts here</p>
+    <a href="register.php" class="btn">Join Now</a>
+  </section>
+
+  <!-- About Section -->
+  <section class="about">
+    <h2>Why Choose FitZone?</h2>
+    <p>We offer the best equipment, certified trainers, personalized fitness plans, and a community to help you stay motivated.</p>
+    <div class="features">
+  <div>
+    <p>💪 Strength Training</p>
+	<img src="st1.jpg" alt="Strength Training">
+	<img src="st2.jpg" alt="Strength Training">
+	<img src="st3.jpg" alt="Strength Training">
+	<img src="st4.jpg" alt="Strength Training">
+  </div>
+  <div>
+
+    <p>🏃‍♂️ Cardio Programs</p>
+	 <img src="cd1.jpg" alt="Cardio Programs">
+	 <img src="cd2.jpg" alt="Cardio Programs">
+	 <img src="cd3.jpg" alt="Cardio Programs">
+  </div>
+  <div>
+    
+    <p>🧘 Yoga & Wellness</p>
+	<img src="yg1.jpg" alt="Yoga & Wellness">
+	<img src="yg2.jpg" alt="Yoga & Wellness">
+	<img src="yg3.jpg" alt="Yoga & Wellness">
+	<img src="yg4.jpg" alt="Yoga & Wellness">
+  </div>
+</div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 FitZone Gym. All rights reserved.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,154 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,header {
+  background-color:brown;
+  color:white;
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2f0707;
+  padding: 15px 30px;
+}
+
+.logo {
+  color: #f4b400;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  padding: 8px 12px;
+  border-radius: 4px;
+}
+
+.nav-links li a:hover {
+  background: #f4b400;
+  color: #111;
+}
+
+/* Hero */
+.hero {
+  height: 80vh;
+  background: url('../images/gym-bg.jpg') no-repeat center center/cover;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #f4b400;
+  color: #111;
+  border-radius: 5px;
+}
+
+/* About */
+.about {
+    background-color: grey;
+  padding: 40px 20px;
+  text-align: center;
+  background: #f5f5f5;
+}
+
+.about h2 {
+  margin-bottom: 15px;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.features div {
+  background: #111;
+  color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  min-width: 150px;
+}
+
+/* Footer */
+footer {
+  background: #111;
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+.form-section {
+  max-width: 500px;
+  margin: 40px auto;
+  padding: 30px;
+  background: #f5f5f5;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.form-section h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.form-section form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-section input,
+.form-section select,
+.form-section button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.form-section button {
+  background: #f4b400;
+  color: #111;
+  font-weight: bold;
+  cursor: pointer;
+}
+textarea {
+  resize: vertical;
+  font-size: 16px;
+}

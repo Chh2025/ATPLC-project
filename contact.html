@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - FitZone Gym</title>
+  <link rel="stylesheet" href="style.css">
+  <script>
+    function validateContactForm() {
+      const name = document.forms["contactForm"]["name"].value;
+      const email = document.forms["contactForm"]["email"].value;
+      const message = document.forms["contactForm"]["message"].value;
+
+      if (name === "" || email === "" || message === "") {
+        alert("All fields are required.");
+        return false;
+      }
+      return true;
+    }
+  </script>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <div class="logo">FitZone</div>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="register.php">Join</a></li>
+        <li><a href="login.php">Login</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="form-section">
+    <h2>Contact Us</h2>
+    <form name="contactForm" action="contact_submit.php" method="POST" onsubmit="return validateContactForm();">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+</body>
+</html>
